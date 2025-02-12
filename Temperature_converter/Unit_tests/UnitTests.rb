@@ -22,6 +22,7 @@ RSpec.describe Celcius do
 
   it 'converts to Celsius correctly' do
     expect(celsius.convert_to_celcius(100)).to eq(100)
+    expect(celsius.convert_to_celcius(100.000)).to eq(100.00)
   end
 
   it 'converts from Celsius correctly' do
